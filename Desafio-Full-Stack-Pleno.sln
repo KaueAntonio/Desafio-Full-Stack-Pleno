@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CIoTD.Api", "CIoTD.Api\CIoTD.Api.csproj", "{E950F158-4DFC-4F09-B7C2-2DF9410046C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CIoTD.Core", "CIoTD.Core\CIoTD.Core.csproj", "{106D6F46-0FBB-43D7-9388-3D1D2D86880D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CIoTD.Infrastructure", "CIoTD.Infrastructure\CIoTD.Infrastructure.csproj", "{CFDB47F8-6948-40A4-95D9-96122F4C9AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIoTD.Devices", "CIoTD.Devices\CIoTD.Devices.csproj", "{B49938F3-1D2D-47F1-B8B5-BBB49352045A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{F3C903BF-0245-473A-B770-91EBB6F37D22}"
+	ProjectSection(SolutionItems) = preProject
+		CIoTD_Production.yaml = CIoTD_Production.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E950F158-4DFC-4F09-B7C2-2DF9410046C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E950F158-4DFC-4F09-B7C2-2DF9410046C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E950F158-4DFC-4F09-B7C2-2DF9410046C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E950F158-4DFC-4F09-B7C2-2DF9410046C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106D6F46-0FBB-43D7-9388-3D1D2D86880D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106D6F46-0FBB-43D7-9388-3D1D2D86880D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106D6F46-0FBB-43D7-9388-3D1D2D86880D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106D6F46-0FBB-43D7-9388-3D1D2D86880D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFDB47F8-6948-40A4-95D9-96122F4C9AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDB47F8-6948-40A4-95D9-96122F4C9AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDB47F8-6948-40A4-95D9-96122F4C9AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDB47F8-6948-40A4-95D9-96122F4C9AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49938F3-1D2D-47F1-B8B5-BBB49352045A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49938F3-1D2D-47F1-B8B5-BBB49352045A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49938F3-1D2D-47F1-B8B5-BBB49352045A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49938F3-1D2D-47F1-B8B5-BBB49352045A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3531F716-D9E9-4E43-BD77-1C211E45B400}
+	EndGlobalSection
+EndGlobal

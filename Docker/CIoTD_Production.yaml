@@ -1,0 +1,43 @@
+version: "3.4"
+
+services:
+  
+  ciotd-device-1:
+    build:
+      context: "../CIoTD.Devices"
+      dockerfile: "../Docker/CIoTD.Devices/Dockerfile"
+    container_name: device1
+    ports:
+      - "40:40"
+    environment:
+      - PORT_APP=40
+
+  ciotd-device-2:
+    build:
+      context: "../CIoTD.Devices"
+      dockerfile: "../Docker/CIoTD.Devices/Dockerfile"
+    container_name: device2
+    ports:
+      - "41:41"
+    environment:
+      - PORT_APP=41
+
+  ciotd-device-3:
+    build:
+      context: "../CIoTD.Devices"
+      dockerfile: "../Docker/CIoTD.Devices/Dockerfile"
+    container_name: device3
+    ports:
+      - "42:42"
+    environment:
+      - PORT_APP=42
+
+  ciotd-api:
+    build:
+      context: "../"
+      dockerfile: "./Docker/CIoTD.Api/Dockerfile"
+    container_name: ciotd-api
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "8080:8080"
